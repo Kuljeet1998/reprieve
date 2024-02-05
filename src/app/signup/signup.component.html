@@ -1,0 +1,27 @@
+
+<div class="signup-container">
+    
+    <form (ngSubmit)="onSubmit()">
+        <div style="font-size: 50px; font-weight: bold; text-align: center;">
+            Let's get started
+        </div><br><br>
+        <button class="redirect-button" type="submit" [disabled]="signupForm.invalid">
+            I am already a member ->
+            <br>
+            Sign in to your account
+        </button>
+        <br><br>
+        <div style="font-size: 30px; text-align: center;">
+            Sign Up
+        </div>
+        <br><br>
+      <div class="form-group">
+        <input type="text" id="fname" formControlName="name" placeholder="First Name">
+        <input type="text" id="lname" formControlName="name" placeholder="Last Name">
+        <input type="text" id="email" formControlName="name" placeholder="Email Address">
+        <input type="text" id="password" formControlName="name" placeholder="Password (8+ characters)">
+      </div>
+      <button class="create-button" type="submit" [disabled]="signupForm.invalid">CREATE AN ACCOUNT</button>
+    </form>
+    <img src="assets/signup.jpeg" alt="Sign up banner">
+  </div>
